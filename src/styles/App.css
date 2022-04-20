@@ -119,3 +119,35 @@ body {
 .porcentage {
   width: 10%;
 }
+
+@media screen and (max-width: 425px) {
+
+  .TrackingAction {
+    max-width: 100%;
+  }
+
+  .input-text {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0;
+    height: 100px;
+  }
+
+  .coin-input {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 0;
+
+  }
+
+  .coin-search {
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+}

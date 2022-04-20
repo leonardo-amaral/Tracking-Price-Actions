@@ -39,7 +39,7 @@ function TrackingAction() {
     <div className="TrackingAction" data-aos="fade-down">
       <div className="nav-ttete">
         <Nav />
-        <div className="coin-search">
+        <div className="coin-search" data-aos="fade-down">
           <h1 className='input-text'>Search a crypto...</h1>
           <form className='input-form'>
             <input type="text" placeholder='Search' className="coin-input" onChange={handleChange} />

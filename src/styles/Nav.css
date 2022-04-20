@@ -9,6 +9,25 @@
   color: rgb(120, 255, 120);
 }
 
+@media screen and (max-width: 450px) {
+
+  .Nav {
+    max-width: 100%;
+  }
+
+  .Go {
+    font-size: 16px;
+  }
+
+  .Money {
+    font-size: 24px;
+  }
+
+  .nav-items {
+    font-size: 12px;
+  }
+}
+
 header {
   position: relative;
   width: 100%;
