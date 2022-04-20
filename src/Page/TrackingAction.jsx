@@ -42,19 +42,20 @@ function TrackingAction() {
         </div>
       </div>
       <div className="table-coin">
-        <div className="name">
-          <h1>Name</h1>
+        <div className="table-items">
+          <div className="name">
+            <h1>Name</h1>
+          </div>
+          <div className="price">
+            <h1>Price</h1>
+          </div>
+          <div className="volume">
+            <h1>Volume</h1>
+          </div>
+          <div className="porcentage">
+            <h1>Porcentage</h1>
+          </div>
         </div>
-        <div className="price">
-          <h1>Price</h1>
-        </div>
-        <div className="volume">
-          <h1>Volume</h1>
-        </div>
-        <div className="porcentage">
-          <h1>Porcentage</h1>
-        </div>
-
       </div>
       {filteredCoins.map(coin => {
         return (

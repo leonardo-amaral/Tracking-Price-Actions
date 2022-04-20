@@ -25,6 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: rgb(147, 255, 172);
+  width: 100%;
 }
 
 .coin-search {
@@ -34,6 +35,7 @@ body {
   flex-direction: row;
   background-color: #111111e1;
   padding: 10px;
+  align-items: center;
   width: 100%;
 
 }
@@ -88,3 +90,21 @@ body {
   position: sticky;
   width: 100%;
 }
+
+/* .table-coin {
+  width: 80vw;
+  display: flex;
+  margin: 0 10%;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  gap: 15vw;
+}
+
+.table-items {
+  margin: 0 14%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+} */
