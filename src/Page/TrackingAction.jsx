@@ -5,12 +5,18 @@ import Coin from '../Components/Coin'
 import { useState, useEffect } from 'react'
 import Nav from '../Components/Nav'
 import { BsSearch } from 'react-icons/bs'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 
 
 function TrackingAction() {
   const [coins, setCoins] = useState([])
   const [search, setSearch] = useState('')
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   useEffect(() => {
     axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
@@ -30,7 +36,7 @@ function TrackingAction() {
 
 
   return (
-    <div className="TrackingAction">
+    <div className="TrackingAction" data-aos="fade-down">
       <div className="nav-ttete">
         <Nav />
         <div className="coin-search">
@@ -41,7 +47,7 @@ function TrackingAction() {
           </form>
         </div>
       </div>
-      <div className="table-coin">
+      {/* <div className="table-coin">
         <div className="table-items">
           <div className="name">
             <h1>Name</h1>
@@ -52,14 +58,14 @@ function TrackingAction() {
           <div className="volume">
             <h1>Volume</h1>
           </div>
-          <div className="porcentage">
-            <h1>Porcentage</h1>
-          </div>
         </div>
-      </div>
+        <div className="porcentage">
+          <h1>Porcentage</h1>
+        </div>
+      </div> */}
       {filteredCoins.map(coin => {
         return (
-          <div>
+          <div data-aos="fade-up">
             <Coin
               key={coin.id}
               name={coin.name}

@@ -91,20 +91,31 @@ body {
   width: 100%;
 }
 
-/* .table-coin {
-  width: 80vw;
+.table-coin {
+  width: 70vw;
+  margin: 0 22%;
   display: flex;
-  margin: 0 10%;
-  flex-direction: row;
-  justify-content: space-between;
-  border-bottom: 1px solid white;
-  gap: 15vw;
 }
 
 .table-items {
-  margin: 0 14%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-} */
+  gap: 15vw;
+}
+
+.name {
+  width: 10%;
+}
+
+.price {
+  width: 10%;
+}
+
+.volume {
+  width: 10%;
+}
+
+.porcentage {
+  width: 10%;
+}
